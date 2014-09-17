@@ -1,0 +1,22 @@
+Description:
+
+  L'objectif ce TP était de découvrir la notion d'héritage en C++.
+  Pour rendre le code plus lisible, on a séparé la définition de la classe de son implémentation (respectivement dans les fichiers 
+ Dvector.h,Darray.h,Dmatrix.h et Dvector.cpp,Darray.cpp,Dmatrix.cpp).
+
+Remarque:
+
+  On peut voir que pour exploiter les avantages de l'héritage il aurait été plus judicieux de redéfinir l'opérateur = pour la classe Dvector et Dmatrix prenant comme argument Darray(en le castant biensur à l'intérieur de la méthode) et ainsi on pouvait hériter les opérateurs surchargés précédement(TP2), malheureusement ceci n'était pas demandé pour ce TP.
+
+
+Utilisateur:
+  
+  Un Makefile a été programmé pour faciliter la vérification des tests.
+  L'utilisateur se place dans le répertoir src et tape la commande "make" pour compiler le programme,puis la commande "./test"
+  pour exécuter les tests,qu'il est invité à écrire pour tester les classes implémentées.
+
+
+Conception:
+
+  On a choisi de déclarer les attributs de la classe Darray protected pour qu'ils soient accessibles depuis les classes qui héritent de Darray(Dvector et Dmatrix pour le moment).
+  
