@@ -35,5 +35,5 @@ public:
   void price(const PnlMat *past, double t, double &prix, double &ic);
 };
 
-#endif /* _MC_H */
+#endif /* _MONTECARLO_H */
 

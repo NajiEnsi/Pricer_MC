@@ -4,6 +4,7 @@
 #include "pnl/pnl_random.h"
 #include "pnl/pnl_vector.h"
 #include "pnl/pnl_matrix.h"
+//#include <math.h>
 
 /// \brief Modèle de Black Scholes
 class BS
